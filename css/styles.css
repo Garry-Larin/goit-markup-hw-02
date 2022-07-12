@@ -1,11 +1,15 @@
 :root {
   --background-color: #ffffff;
   --accent-color: #2196f3;
+  --text-color: #212121;
+  --section-text: #757575;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #757575;
+  color: var(--section-text);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -18,11 +22,9 @@ body {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo-black {
   color: #000000;
@@ -30,28 +32,29 @@ body {
 
 .nav-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 0.07;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.menu .link.current {
+  color: var(--accent-color);
 }
 
 .contact {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 0.07;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 
 .contact:hover,
 .contact:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .hero-title {
@@ -61,7 +64,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .hero {
@@ -69,14 +72,14 @@ body {
 }
 
 .hero-btn {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -86,28 +89,20 @@ body {
 }
 
 .benefits-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 0.07;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .section-description {
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 0.03;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .team-member {
@@ -116,36 +111,30 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .job-title {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .address {
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .work-examples .title {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .work-description {
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.8;
 }
 
 .footer {
@@ -153,5 +142,5 @@ body {
 }
 
 .logo-white {
-  color: white;
+  color: var(--background-color);
 }
