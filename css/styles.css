@@ -157,9 +157,17 @@ body {
   color: var(--text-color);
 }
 
+.section-title-pf {
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
 .work-description {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
 }
 
 .footer {
@@ -168,4 +176,9 @@ body {
 
 .logo-white {
   color: var(--background-color);
+}
+
+.active {
+  color: var(--background-color);
+  background-color: var(--accent-color);
 }
